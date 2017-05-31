@@ -1,0 +1,21 @@
+#Squares (1,1), (1,2), (2,1), (2,2) have no monsters and no pits.
+(not M_1_1)
+(not P_1_1)
+(not M_1_2)
+(not P_1_2)
+(not M_2_1)
+(not P_2_1)
+(not M_2_2)
+(not P_2_2)
+
+#Thus square (1,1) will neither have stench nor breeze
+(not S_1_1)
+(not B_1_1)
+
+#Also there will be no stench and breeze in the following squares
+(if (not M_2_1) (and (not S_2_2) (not S_3_1)))
+(if (not M_2_2) (and (not S_2_1) (not S_3_2) (not S_2_3) (not S_1_2)))
+(if (not M_1_2) (and (not S_2_2) (not S_1_3)))
+(if (not P_2_1) (and (not B_2_2) (not B_3_1)))
+(if (not P_2_2) (and (not B_2_1) (not B_3_2) (not B_2_3) (not B_1_2)))
+(if (not P_1_2) (and (not B_2_2) (not B_1_3)))

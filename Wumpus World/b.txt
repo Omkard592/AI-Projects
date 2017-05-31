@@ -1,0 +1,13 @@
+#Squares (1,1), (1,2), (2,1), (2,2) have no monsters and no pits.
+(not M_1_1)
+(not P_1_1)
+(not M_1_2)
+(not P_1_2)
+(not M_2_1)
+(not P_2_1)
+(not M_2_2)
+(not P_2_2)
+
+#Thus square (1,1) will neither have stench nor breeze
+(not S_1_1)
+(not B_1_1)
